@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                MyResume
+            </div>
+            <div >
+                <ul class="navLinks">
+                    <li><a href="Home.html" class="navLink">Home</a></li>
+                    <li ><a href="About.html" class="navLink">About</a></li>
+                    <li ><a href="ContactForm.html" class="navLink">Contact</a></li>
+                </ul>
+                <div class="hamburger" onclick="toggleMenu()">≣</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your full name" />
+              </div>
+        
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+              </div>
+        
+              <div>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required placeholder="Message subject" />
+              </div>
+        
+              <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+              </div>
+        
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+    </main>
+</body>
+<script src="script.js" defer></script>
+</html>
